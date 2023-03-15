@@ -5,7 +5,7 @@ import {exerciseOptions, fetchData} from '../utils/fetchData';
 import HorizontalScrollbar from './HorizontalScrollbar';
 
 const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
-  const [search, setSearch] = useState('');
+  let [search, setSearch] = useState('');
 
   const [bodyParts, setBodyParts] = useState([]);
 
@@ -36,7 +36,8 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
           exercise.bodyPart.toLowerCase().includes(search)
       );
 
-      setSearch = '';
+      // prettier-ignore
+      setSearch = ('');
       setExercises(searchedExercises);
     }
   };
