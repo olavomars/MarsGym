@@ -73,13 +73,13 @@ const SearchExercises = () => {
             width: {lg: '175px', xs: '80px'},
             height: '56px',
           }}
-          onClick={handleSearch()}
+          onClick={() => handleSearch()}
         >
           Search
         </Button>
       </Box>
       <Box sx={{position: 'relative', width: '100%', p: '20px'}}>
-        <HorizontalScrollBar data={bodyParts} />
+        {/* <HorizontalScrollBar data={bodyParts} /> */}
       </Box>
     </Stack>
   );
