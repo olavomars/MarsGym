@@ -149,6 +149,11 @@ body {
   .exercise-card {
     width: 280px;
   }
+
+  .exercise-video {
+    margin-bottom: 80px;
+  }
+
   .hero-banner-img {
     z-index: -1;
     right: 0px;
